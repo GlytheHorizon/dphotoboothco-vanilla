@@ -1,16 +1,69 @@
-# React + Vite
+# The Photobooth Co.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A static vanilla HTML/CSS/JS website for **The Photobooth Co.** — a photo booth rental service based in Metro Manila, Philippines.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Capturing Smiles. Capturing Memories. Since 2017, The Photobooth Co. has been providing premium photo booth experiences for corporate events, weddings, private celebrations, schools, government functions, and brand activations across the Philippines.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Pure HTML5, CSS3, and JavaScript (ES6+)
+- No frameworks, no build tools, no dependencies
+- CSS custom properties for theming
+- Intersection Observer API for scroll animations
+- Responsive masonry grid gallery
+- Lightbox viewer for gallery and package images
 
-## Expanding the Oxlint configuration
+## Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+/
+├── index.html          # Main HTML with all sections
+├── style.css           # All styles (balanced green palette)
+├── script.js           # All JS (data, rendering, interactions)
+├── images/
+│   ├── logo.png        # Company logo
+│   ├── package1-10.png # Service package rate images
+│   └── hero/           # Hero slideshow background images
+├── assets/
+│   ├── Juliana Nicole 18th Birthday/   # Debut gallery
+│   ├── Caloocan High School.../        # Reunion gallery
+│   ├── Lola Amour Live Concert.../     # Concert gallery
+│   ├── Mateo Sebastian.../             # Birthday gallery
+│   ├── MCU Hospital Father's Day.../   # Corporate gallery
+│   └── MCU Hospital Mother's Day.../   # Corporate gallery
+├── favicon.svg
+├── robots.txt
+└── sitemap.xml
+```
+
+## Getting Started
+
+No build step required. Open `index.html` directly in a browser:
+
+```bash
+open index.html     # macOS
+start index.html    # Windows
+```
+
+Or serve locally with any static server:
+
+```bash
+npx serve .
+```
+
+## Color Palette
+
+| Role       | Hex     |
+|------------|---------|
+| Primary    | #7CB342 |
+| Dark       | #558B2F |
+| Light      | #9CCC65 |
+| Accent     | #C8FF00 |
+| Text       | #1A1A1A |
+| Background | #F5F5F5 |
+
+## License
+
+All rights reserved. The Photobooth Co.
