@@ -323,7 +323,15 @@
 
       <div id="gallery-filters" class="flex flex-wrap justify-center gap-3 mb-12"></div>
 
-      <div id="gallery-grid" class="gallery-grid"></div>
+      <div style="position:relative">
+        <div id="gallery-grid" class="gallery-grid"></div>
+        <button id="gallery-prev" aria-label="Previous" style="position:absolute;top:50%;left:0;transform:translateY(-50%);width:2.5rem;height:2.5rem;border-radius:50%;background:#fff;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;z-index:2;transition:all 0.3s;color:#374151" onmouseenter="this.style.background='var(--primary)';this.style.color='#fff'" onmouseleave="this.style.background='#fff';this.style.color='#374151'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button id="gallery-next" aria-label="Next" style="position:absolute;top:50%;right:0;transform:translateY(-50%);width:2.5rem;height:2.5rem;border-radius:50%;background:#fff;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.15);display:flex;align-items:center;justify-content:center;z-index:2;transition:all 0.3s;color:#374151" onmouseenter="this.style.background='var(--primary)';this.style.color='#fff'" onmouseleave="this.style.background='#fff';this.style.color='#374151'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
     </div>
 
     <!-- Lightbox -->

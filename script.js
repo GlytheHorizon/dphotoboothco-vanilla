@@ -37,7 +37,7 @@ const printStyles = [
   { category: 'Premium Prints', items: ['Polaroid Standee', 'Full Magnet Polaroid'] },
 ];
 
-const galleryCategories = ['All', 'Birthday', 'Concert', 'Corporate', 'Debut', 'Reunion'];
+const galleryCategories = ['Birthday', 'Concert', 'Corporate', 'Debut', 'Reunion'];
 
 const galleryImages = [
   { id: 1, src: 'assets/Juliana Nicole 18th Birthday/556988623_1278279890983521_1594415927584033793_n.jpg', category: 'Debut', width: 600, height: 800 },
@@ -354,11 +354,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
-  let activeCategory = 'All';
+  let activeCategory = galleryCategories[0];
   let currentLightboxId = null;
 
   function renderGallery(cat) {
-    const filtered = cat === 'All' ? galleryImages : galleryImages.filter(i => i.category === cat);
+    const filtered = galleryImages.filter(i => i.category === cat);
     galleryGrid.innerHTML = filtered.map(img =>
       `<div class="gallery-item animate-on-scroll fade-scale" style="cursor:pointer;position:relative;border-radius:1rem;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:all 0.4s" onclick="openLightbox(${img.id})">
         <img src="${img.src}" alt="${img.category}" loading="eager" style="width:100%;display:block;transition:transform 0.4s" onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform=''"/>
@@ -385,7 +385,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   renderFilters();
-  renderGallery('All');
+  renderGallery(activeCategory);
+
+  // --- GALLERY CAROUSEL NAV ---
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  function scrollGallery(dir) {
+    const item = galleryGrid.querySelector('.gallery-item');
+    if (!item) return;
+    const scrollAmount = item.offsetWidth + 20; // width + gap
+    galleryGrid.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
+  }
+  prevBtn?.addEventListener('click', () => scrollGallery(-1));
+  nextBtn?.addEventListener('click', () => scrollGallery(1));
 
   window.openLightbox = function(id) {
     currentLightboxId = id;
