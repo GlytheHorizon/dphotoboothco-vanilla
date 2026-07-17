@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
-  let activeCategory = galleryCategories[0];
+  let activeCategory = 'Corporate';
   let currentLightboxId = null;
 
   function renderGallery(cat) {
