@@ -1,10 +1,11 @@
 // ===== DATA (moved from React data files) =====
 const navLinks = [
   { name: 'Home', href: '#home' },
+  { name: 'Packages', href: '#packages-slider-section' },
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
   { name: 'Why Choose Us', href: '#why-choose-us' },
-  { name: 'Gallery', href: '#gallery' },
+
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -35,80 +36,6 @@ const printStyles = [
   { category: 'Standard Prints', items: ['Frame Standee', 'Strip Bookmark', 'Dedication Strip'] },
   { category: 'Magnetic Prints', items: ['Full Magnet', 'Magnet Strip', 'Dedication Strip Magnet', 'Polaroid Magnet'] },
   { category: 'Premium Prints', items: ['Polaroid Standee', 'Full Magnet Polaroid'] },
-];
-
-const galleryCategories = ['Birthday', 'Concert', 'Corporate', 'Debut', 'Reunion'];
-
-const galleryImages = [
-  { id: 1, src: 'assets/Juliana Nicole 18th Birthday/556988623_1278279890983521_1594415927584033793_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 2, src: 'assets/Juliana Nicole 18th Birthday/557137666_1278279590983551_7589384227759907015_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 3, src: 'assets/Juliana Nicole 18th Birthday/557539933_1278276650983845_4305549246636485720_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 4, src: 'assets/Juliana Nicole 18th Birthday/557730283_1278277847650392_2908942573190228902_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 5, src: 'assets/Juliana Nicole 18th Birthday/558172321_1278279290983581_3042133170132357463_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 6, src: 'assets/Juliana Nicole 18th Birthday/558203127_1278279544316889_8036723817793057145_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 7, src: 'assets/Juliana Nicole 18th Birthday/558769358_1278276597650517_2096771826634557594_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 8, src: 'assets/Juliana Nicole 18th Birthday/558820003_1278276637650513_6929314101224320127_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 9, src: 'assets/Juliana Nicole 18th Birthday/558972593_1278278140983696_4094690360462765610_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 10, src: 'assets/Juliana Nicole 18th Birthday/559075599_1278277194317124_2326513496045451576_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 11, src: 'assets/Juliana Nicole 18th Birthday/559215672_1278277817650395_4167650853126982308_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 12, src: 'assets/Juliana Nicole 18th Birthday/559424467_1278280860983424_2889973111459719657_n.jpg', category: 'Debut', width: 600, height: 800 },
-  { id: 13, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481155479_1092364509575061_367951079437807978_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 14, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481188907_1092364639575048_5588686789225823345_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 15, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481204912_1092364449575067_7710398499439100289_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 16, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481215981_1092364352908410_143909570482644073_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 17, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481232165_1092364549575057_2702727138859707999_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 18, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481321350_1092364366241742_2828215925136035734_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 19, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481465252_1092364579575054_3144014366778587184_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 20, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481486355_1092364462908399_791533592408836317_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 21, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481780264_1092364682908377_3100446324117832751_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 22, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/481915182_1092364436241735_3879362761475528222_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 23, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/482069857_1092364492908396_6016445804904572401_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 24, src: 'assets/Caloocan High School Batch 88 Emerald Anniversary/482204086_1092364409575071_4267729807929189763_n.jpg', category: 'Reunion', width: 600, height: 800 },
-  { id: 25, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487509950_1117436427067869_4126388215525672371_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 26, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487539799_1117436463734532_3835309408524713773_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 27, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487807466_1117436110401234_4812434778233845149_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 28, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487825167_1117436420401203_7600541258101387260_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 29, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487829068_1117436140401231_2191394358500934495_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 30, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/487853307_1117436423734536_7281711022920110219_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 31, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/488380432_1117436120401233_3423324664473587249_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 32, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/488459830_1117436400401205_7951209601978240615_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 33, src: 'assets/Lola Amour Live Concert  Album Launch Circuit Makati/488493415_1117435977067914_6056587578440250896_n.jpg', category: 'Concert', width: 600, height: 800 },
-  { id: 34, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/723066958_1500964305381744_1729403726184542595_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 35, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/723190641_1500964895381685_1794274894285425446_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 36, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/723527689_1500964862048355_1864047873295374811_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 37, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/723587721_1500965038715004_8859695316414821085_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 38, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726405421_1500965005381674_8735753714030021023_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 39, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726427409_1500964585381716_897908707910897613_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 40, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726575937_1500964588715049_4074257521988951827_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 41, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726596892_1500964252048416_5710099041070247942_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 42, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726733979_1500964808715027_3191061709184756359_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 43, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/726860480_1500964952048346_2482424297354230448_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 44, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/727051479_1500965008715007_4389277465463596038_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 45, src: 'assets/MCU Hospital Father\'s Day Celebration 2026/727551191_1500964822048359_693081722112029106_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 46, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/691192343_1461881209290054_1294532725185558997_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 47, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/691282083_1461881109290064_5958708810972941860_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 48, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/692119827_1461881332623375_4419857503831844879_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 49, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/693372338_1461880949290080_696693691459681877_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 50, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/693413078_1461881392623369_4649319969988035706_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 51, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/693530575_1461881432623365_8349661639013546538_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 52, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/693629289_1461881359290039_6090308272355381713_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 53, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/694303502_1461881435956698_6292514969957916013_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 54, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/694729131_1461881239290051_3853640340947996749_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 55, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/694763407_1461881472623361_5257720402636183821_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 56, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/695291939_1461881535956688_7378536671878100380_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 57, src: 'assets/MCU Hospital Mother\'s Day Celebration 2026/695531841_1461881242623384_716393998951208859_n.jpg', category: 'Corporate', width: 600, height: 800 },
-  { id: 58, src: 'assets/Mateo Sebastian 1st Birthday & Christening/502935512_1171670161644495_8752925831307007538_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 59, src: 'assets/Mateo Sebastian 1st Birthday & Christening/502970145_1171669811644530_333800817992940461_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 60, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503108190_1171670064977838_2892500228190996038_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 61, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503128722_1171670054977839_3096521133075177316_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 62, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503253717_1171670164977828_2577051714060438392_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 63, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503273861_1171669964977848_8405269790315829933_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 64, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503281324_1171670284977816_7811223723138556711_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 65, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503291462_1171669854977859_8549015502884002699_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 66, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503358339_1171669974977847_5184878914307532015_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 67, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503397026_1171669968311181_3755335936909762372_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 68, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503400132_1171670168311161_8917204374594028568_n.jpg', category: 'Birthday', width: 600, height: 800 },
-  { id: 69, src: 'assets/Mateo Sebastian 1st Birthday & Christening/503596314_1171669831644528_1219953889093659996_n.jpg', category: 'Birthday', width: 600, height: 800 },
 ];
 
 const whyChooseUs = [
@@ -155,34 +82,7 @@ const testimonials = [
   { id: 5, name: 'Tricia Go', role: 'Reunion Organizer', image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80', rating: 5, text: 'Our family reunion was made so much more fun with the photo booth. Three generations had a blast posing with props. The digital album they sent after was the cherry on top!' },
 ];
 
-const statsData = [
-  { id: 1, value: 500, suffix: '+', label: 'Events' },
-  { id: 2, value: 15000, suffix: '+', label: 'Photos Printed' },
-  { id: 3, value: 99, suffix: '%', label: 'Happy Clients' },
-  { id: 4, value: 2017, suffix: '', label: 'Since' },
-];
 
-const coreValues = [
-  { title: 'Professionalism', description: 'We conduct every event with integrity, reliability, and excellence.' },
-  { title: 'Creativity', description: 'We continuously innovate to provide unique and engaging event experiences.' },
-  { title: 'Quality', description: 'We invest in premium equipment and deliver consistently high-quality service.' },
-  { title: 'Commitment', description: 'We value every client and strive to exceed expectations in every project.' },
-  { title: 'Customer Satisfaction', description: 'Our clients\' happiness is the measure of our success.' },
-];
-
-const offerings = [
-  'Unlimited Photo Sessions', 'Unlimited Instant Prints', 'Customized Photo Layout Design',
-  'Personalized Event Templates', 'Professional Booth Attendant', 'Complete Booth Setup',
-  'Premium Props and Accessories', 'Digital Copy of All Photos', 'Social Media Sharing',
-  'Event Branding', 'Various Backdrop Options', 'High-Quality Prints',
-];
-
-const clientTypes = [
-  'Corporate Companies', 'Government Agencies', 'Educational Institutions',
-  'Hotels & Resorts', 'Event Organizers', 'Wedding Coordinators',
-  'Churches', 'Non-Profit Organizations', 'Small & Medium Enterprises',
-  'Private Clients',
-];
 
 const faqs = [
   { id: 1, question: 'How far in advance should I book?', answer: 'We recommend booking at least 2\u20134 weeks in advance to secure your preferred date. However, we do accommodate last-minute bookings depending on availability. Reach out to us and we\'ll do our best to fit your event!' },
@@ -252,12 +152,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   mobileToggle.addEventListener('click', () => toggleMobile());
-  mobileToggle.style.color = '#fff';
+  mobileToggle.style.color = '#121212';
 
   window.addEventListener('scroll', () => {
     const scrolled = window.scrollY > 50;
     navbar.classList.toggle('scrolled', scrolled);
-    mobileToggle.style.color = scrolled ? '#111' : '#fff';
+    mobileToggle.style.color = scrolled ? '#fff' : '#121212';
     // Progress bar
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -265,30 +165,70 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('progress-bar').style.transform = `scaleX(${progress})`;
   });
 
-  // --- HERO SLIDESHOW ---
-  const slides = document.querySelectorAll('.hero-slide');
-  let currentSlide = 0;
-  let slideTimer;
+  // --- PACKAGES SLIDER ---
+  const packagesTrack = document.getElementById('packages-slider-track');
+  const packagesPrev = document.getElementById('packages-prev');
+  const packagesNext = document.getElementById('packages-next');
+  const packagesDots = document.getElementById('packages-slider-dots');
 
-  function goToSlide(index) {
-    slides.forEach((s, i) => s.classList.toggle('active', i === index));
-    currentSlide = index;
+  if (packagesTrack) {
+    let currentPackageSlide = 0;
+    const packageImages = ['package1.png','package2.png','package3.png','package4.png','package5.png','package6.png','package7.png','package8.png','package9.png','package10.png'];
+
+    function renderPackagesSlider() {
+      packagesTrack.innerHTML = packageImages.map((img, i) =>
+        `<div class="packages-slide">
+          <div class="packages-slide-img">
+            <img src="images/${img}" alt="Package ${i + 1}" loading="eager" />
+          </div>
+        </div>`
+      ).join('');
+
+      updatePackageDots();
+      goToPackageSlide(0);
+    }
+
+    function updatePackageDots() {
+      if (!packagesDots) return;
+      packagesDots.innerHTML = Array.from({ length: packageImages.length }, (_, i) =>
+        `<button class="packages-slider-dot ${i === currentPackageSlide ? 'active' : ''}" data-index="${i}"></button>`
+      ).join('');
+      packagesDots.querySelectorAll('.packages-slider-dot').forEach(dot => {
+        dot.addEventListener('click', () => {
+          goToPackageSlide(parseInt(dot.dataset.index));
+        });
+      });
+    }
+
+    function goToPackageSlide(index) {
+      currentPackageSlide = Math.min(index, packageImages.length - 1);
+      const slide = packagesTrack.querySelector('.packages-slide');
+      if (!slide) return;
+      const offset = -(currentPackageSlide * slide.offsetWidth);
+      packagesTrack.style.transform = `translateX(${offset}px)`;
+      packagesDots?.querySelectorAll('.packages-slider-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentPackageSlide);
+      });
+    }
+
+    packagesPrev?.addEventListener('click', () => {
+      goToPackageSlide(currentPackageSlide - 1);
+    });
+
+    packagesNext?.addEventListener('click', () => {
+      goToPackageSlide(currentPackageSlide + 1);
+    });
+
+    renderPackagesSlider();
+
+    window.addEventListener('resize', () => {
+      const slide = packagesTrack.querySelector('.packages-slide');
+      if (slide) {
+        const offset = -(currentPackageSlide * slide.offsetWidth);
+        packagesTrack.style.transform = `translateX(${offset}px)`;
+      }
+    });
   }
-
-  function nextSlide() { goToSlide((currentSlide + 1) % slides.length); }
-  function prevSlide() { goToSlide((currentSlide - 1 + slides.length) % slides.length); }
-
-  function resetSlideTimer() {
-    clearInterval(slideTimer);
-    slideTimer = setInterval(nextSlide, 5000);
-  }
-
-  document.querySelectorAll('.hero-slide').forEach(s => s.classList.remove('active'));
-  slides[0]?.classList.add('active');
-  slideTimer = setInterval(nextSlide, 5000);
-
-  document.getElementById('hero-prev')?.addEventListener('click', () => { prevSlide(); resetSlideTimer(); });
-  document.getElementById('hero-next')?.addEventListener('click', () => { nextSlide(); resetSlideTimer(); });
 
   // --- TRUSTED BY ---
   const trustedTrack = document.getElementById('trusted-track');
@@ -304,9 +244,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const allItems = [...trustedItems, ...trustedItems];
     trustedTrack.innerHTML = allItems.map(item =>
-      `<div class="flex items-center gap-3 flex-shrink-0 opacity-40 hover:opacity-70 transition-opacity" style="flex-shrink:0">
-        <span style="color:#9CA3AF;width:24px;height:24px">${iconMap[item.icon] || ''}</span>
-        <span class="text-sm font-medium text-gray-400 whitespace-nowrap">${item.label}</span>
+      `<div class="flex items-center gap-3 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity" style="flex-shrink:0">
+        <span style="color:#6B7280;width:24px;height:24px">${iconMap[item.icon] || ''}</span>
+        <span class="text-sm font-medium text-gray-500 whitespace-nowrap">${item.label}</span>
       </div>`
     ).join('');
   }
@@ -315,10 +255,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const photoboothGrid = document.getElementById('photobooth-grid');
   if (photoboothGrid) {
     photoboothGrid.innerHTML = photoboothTypes.map((b, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.08);transition:all 0.3s" onmouseenter="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)'">
+      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;overflow:hidden;border:1px solid rgba(255,255,255,0.1);transition:all 0.3s" onmouseenter="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(175,255,0,0.3)'" onmouseleave="this.style.transform='';this.style.borderColor='rgba(255,255,255,0.1)'">
         <div style="padding:1.5rem">
-          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.125rem;color:var(--text);margin-bottom:0.5rem">${b.title}</h3>
-          <p style="font-size:0.875rem;color:var(--muted);line-height:1.625">${b.description}</p>
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.125rem;color:#fff;margin-bottom:0.5rem">${b.title}</h3>
+          <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.625">${b.description}</p>
         </div>
       </div>`
     ).join('');
@@ -327,88 +267,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const printStylesGrid = document.getElementById('print-styles-grid');
   if (printStylesGrid) {
     printStylesGrid.innerHTML = printStyles.map((g, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#fff;border-radius:1rem;padding:1.5rem;box-shadow:0 8px 32px rgba(0,0,0,0.08)">
-        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:var(--primary);margin-bottom:1rem">${g.category}</h3>
+      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;border:1px solid rgba(255,255,255,0.1)">
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:#AFFF00;margin-bottom:1rem">${g.category}</h3>
         <ul style="display:flex;flex-direction:column;gap:0.625rem">
-          ${g.items.map(item => `<li style="display:flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:#4B5563"><span style="width:6px;height:6px;border-radius:50%;background:var(--primary);flex-shrink:0"></span>${item}</li>`).join('')}
+          ${g.items.map(item => `<li style="display:flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:rgba(255,255,255,0.6)"><span style="width:6px;height:6px;border-radius:50%;background:#AFFF00;flex-shrink:0"></span>${item}</li>`).join('')}
         </ul>
       </div>`
     ).join('');
   }
 
-  const servicesGrid = document.getElementById('services-grid');
-  if (servicesGrid) {
-    const packageImages = ['package1.png','package2.png','package3.png','package4.png','package5.png','package6.png','package7.png','package8.png','package9.png','package10.png'];
-    servicesGrid.innerHTML = packageImages.map((img, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="border-radius:0.75rem;overflow:hidden;transition:all 0.5s;box-shadow:0 4px 16px rgba(0,0,0,0.08);cursor:pointer" onclick="openPackageLightbox('images/${img}')" onmouseenter="this.style.transform='scale(1.03)';this.style.boxShadow='0 12px 40px rgba(0,0,0,0.12)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)'">
-        <img src="images/${img}" alt="Service Package" loading="eager" style="width:100%;display:block" />
-      </div>`
-    ).join('');
-  }
-
-  // --- GALLERY ---
-  const galleryFilters = document.getElementById('gallery-filters');
-  const galleryGrid = document.getElementById('gallery-grid');
+  // --- LIGHTBOX (for package images) ---
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
-  const lightboxPrev = document.getElementById('lightbox-prev');
-  const lightboxNext = document.getElementById('lightbox-next');
-  let activeCategory = 'Corporate';
-  let currentLightboxId = null;
-
-  function renderGallery(cat) {
-    const filtered = galleryImages.filter(i => i.category === cat);
-    galleryGrid.innerHTML = filtered.map(img =>
-      `<div class="gallery-item animate-on-scroll fade-scale" style="cursor:pointer;position:relative;border-radius:1rem;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.08);transition:all 0.4s" onclick="openLightbox(${img.id})">
-        <img src="${img.src}" alt="${img.category}" loading="eager" style="width:100%;display:block;transition:transform 0.4s" onmouseenter="this.style.transform='scale(1.05)'" onmouseleave="this.style.transform=''"/>
-        <div style="position:absolute;inset:0;transition:all 0.5s;display:flex;align-items:center;justify-content:center" onmouseenter="this.style.background='rgba(0,0,0,0.3)'" onmouseleave="this.style.background='rgba(0,0,0,0)'">
-          <span style="color:#fff;font-size:0.875rem;font-weight:500;opacity:0;transition:opacity 0.5s;background:rgba(255,255,255,0.2);backdrop-filter:blur(4px);padding:0.5rem 1rem;border-radius:9999px" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0'">${img.category}</span>
-        </div>
-      </div>`
-    ).join('');
-  }
-
-  function renderFilters() {
-    galleryFilters.innerHTML = galleryCategories.map(cat =>
-      `<button class="filter-btn${cat === activeCategory ? ' active' : ''} px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300" data-cat="${cat}">${cat}</button>`
-    ).join('');
-    galleryFilters.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        galleryFilters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeCategory = btn.dataset.cat;
-        renderGallery(activeCategory);
-        observeAnimations();
-      });
-    });
-  }
-
-  renderFilters();
-  renderGallery(activeCategory);
-
-  // --- GALLERY CAROUSEL NAV ---
-  const prevBtn = document.getElementById('gallery-prev');
-  const nextBtn = document.getElementById('gallery-next');
-  function scrollGallery(dir) {
-    const item = galleryGrid.querySelector('.gallery-item');
-    if (!item) return;
-    const scrollAmount = item.offsetWidth + 20; // width + gap
-    galleryGrid.scrollBy({ left: dir * scrollAmount, behavior: 'smooth' });
-  }
-  prevBtn?.addEventListener('click', () => scrollGallery(-1));
-  nextBtn?.addEventListener('click', () => scrollGallery(1));
-
-  window.openLightbox = function(id) {
-    currentLightboxId = id;
-    const img = galleryImages.find(i => i.id === id);
-    if (img) {
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.category || 'Gallery image';
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-  };
 
   window.openPackageLightbox = function(src) {
     lightboxImg.src = src;
@@ -420,73 +291,25 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeLightbox() {
     lightbox.classList.remove('open');
     document.body.style.overflow = '';
-    currentLightboxId = null;
-  }
-
-  function navigateLightbox(dir) {
-    const filtered = activeCategory === 'All' ? galleryImages : galleryImages.filter(i => i.category === activeCategory);
-    const idx = filtered.findIndex(i => i.id === currentLightboxId);
-    if (idx === -1) return;
-    const newIdx = (idx + dir + filtered.length) % filtered.length;
-    const newId = filtered[newIdx].id;
-    currentLightboxId = newId;
-    const img = galleryImages.find(i => i.id === newId);
-    if (img) { lightboxImg.src = img.src; lightboxImg.alt = img.category || 'Gallery image'; }
   }
 
   lightboxClose?.addEventListener('click', closeLightbox);
   lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  lightboxPrev?.addEventListener('click', () => navigateLightbox(-1));
-  lightboxNext?.addEventListener('click', () => navigateLightbox(1));
   document.addEventListener('keydown', (e) => {
     if (!lightbox?.classList.contains('open')) return;
     if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') navigateLightbox(-1);
-    if (e.key === 'ArrowRight') navigateLightbox(1);
   });
 
   // --- WHY CHOOSE US ---
   const wcuGrid = document.getElementById('wcu-grid');
   if (wcuGrid) {
     wcuGrid.innerHTML = whyChooseUs.map((item, i) =>
-      `<div class="animate-on-scroll fade-scale stagger-${i+1}" style="background:var(--bg-section);border-radius:1rem;padding:1.5rem;transition:all 0.3s;border:1px solid transparent" onmouseenter="this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)';this.style.background='#fff';this.style.borderColor='rgba(124,179,66,0.2)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.boxShadow='';this.style.background='var(--bg-section)';this.style.borderColor='transparent';this.style.transform=''">
-        <div style="width:3rem;height:3rem;border-radius:0.75rem;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="2.5"/></svg>
+      `<div class="animate-on-scroll fade-scale stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;transition:all 0.3s;border:1px solid rgba(255,255,255,0.1)" onmouseenter="this.style.borderColor='rgba(175,255,0,0.3)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.borderColor='rgba(255,255,255,0.1)';this.style.transform=''">
+        <div style="width:3rem;height:3rem;border-radius:0.75rem;background:#AFFF00;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="2.5"/></svg>
         </div>
-        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.5rem">${item.title}</h3>
-        <p style="font-size:0.875rem;color:var(--muted);line-height:1.625">${item.description}</p>
-      </div>`
-    ).join('');
-  }
-
-  // --- ABOUT: Core Values ---
-  const aboutValues = document.getElementById('about-values');
-  if (aboutValues) {
-    aboutValues.innerHTML = coreValues.map((v, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:var(--bg-section);border-radius:1rem;padding:1.5rem;text-align:center;transition:all 0.3s" onmouseenter="this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)';this.style.transform='translateY(-3px)'" onmouseleave="this.style.boxShadow='';this.style.transform=''">
-        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.5rem">${v.title}</h3>
-        <p style="font-size:0.875rem;color:var(--muted);line-height:1.625">${v.description}</p>
-      </div>`
-    ).join('');
-  }
-
-  // --- ABOUT: What We Offer ---
-  const offeringsGrid = document.getElementById('offerings-grid');
-  if (offeringsGrid) {
-    offeringsGrid.innerHTML = offerings.map((item, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:var(--bg-section);border-radius:0.75rem;padding:1rem 1.25rem;display:flex;align-items:center;gap:0.75rem;transition:all 0.3s" onmouseenter="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.06)';this.style.background='#fff'" onmouseleave="this.style.boxShadow='';this.style.background='var(--bg-section)'">
-        <span style="width:8px;height:8px;border-radius:50%;background:var(--primary);flex-shrink:0"></span>
-        <span style="font-size:0.875rem;color:var(--text);font-weight:500">${item}</span>
-      </div>`
-    ).join('');
-  }
-
-  // --- ABOUT: Our Clients ---
-  const clientsGrid = document.getElementById('clients-grid');
-  if (clientsGrid) {
-    clientsGrid.innerHTML = clientTypes.map((c, i) =>
-      `<div class="animate-on-scroll fade-scale stagger-${i+1}" style="background:#fff;border-radius:0.75rem;padding:1rem;text-align:center;border:1px solid var(--bg-section);transition:all 0.3s" onmouseenter="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.06)';this.style.borderColor='var(--primary)'" onmouseleave="this.style.boxShadow='';this.style.borderColor='var(--bg-section)'">
-        <span style="font-size:0.875rem;color:var(--text);font-weight:600">${c}</span>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:#fff;margin-bottom:0.5rem">${item.title}</h3>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.625">${item.description}</p>
       </div>`
     ).join('');
   }
@@ -556,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
     processGrid.innerHTML = processSteps.map((step, i) =>
       `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:var(--bg-section);border-radius:1rem;padding:1.5rem;display:flex;align-items:flex-start;gap:1.25rem;transition:all 0.3s" onmouseenter="this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.boxShadow='';this.style.transform=''">
         <div style="position:relative;flex-shrink:0">
-          <div style="width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(124,179,66,0.3);transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+          <div style="width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(175,255,0,0.3);transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="2.5"/></svg>
           </div>
           <div style="position:absolute;top:-0.5rem;right:-0.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#fff;border:2px solid var(--primary);display:flex;align-items:center;justify-content:center">
@@ -647,41 +470,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- STATS ANIMATED COUNTERS ---
-  const statsSection = document.getElementById('stats-section');
-  const statsGrid = document.getElementById('stats-grid');
-  let statsAnimated = false;
-
-  if (statsGrid) {
-    statsGrid.innerHTML = statsData.map((s, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="text-align:center">
-        <div style="font-size:3rem;font-family:'Poppins',sans-serif;font-weight:800;color:#fff;margin-bottom:0.25rem" class="stat-number" data-value="${s.value}" data-suffix="${s.suffix}">0${s.suffix}</div>
-        <div style="color:rgba(255,255,255,0.8);font-size:1rem;font-weight:500;letter-spacing:0.025em">${s.label}</div>
-      </div>`
-    ).join('');
-  }
-
-  function animateStats() {
-    if (statsAnimated) return;
-    statsAnimated = true;
-    document.querySelectorAll('.stat-number').forEach(el => {
-      const end = parseInt(el.dataset.value);
-      const suffix = el.dataset.suffix;
-      const duration = 2500;
-      const startTime = performance.now();
-
-      function update(now) {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        const current = Math.floor(eased * end);
-        el.textContent = current.toLocaleString() + suffix;
-        if (progress < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
-    });
-  }
-
   // --- FAQ ---
   const faqList = document.getElementById('faq-list');
   if (faqList) {
@@ -759,11 +547,6 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-
-          // Check for stats
-          if (entry.target.closest('#stats-section')) {
-            animateStats();
-          }
         }
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
@@ -773,9 +556,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   observeAnimations();
 
-  // Initial stagger for hero
-  document.querySelectorAll('.hero-animate').forEach((el, i) => {
-    setTimeout(() => { el.classList.add('visible'); }, 200 + i * 200);
+  // Hero entrance animation
+  document.querySelectorAll('.hero-reveal').forEach((el, i) => {
+    const delay = 200 + i * 150;
+    setTimeout(() => { el.classList.add('visible'); }, delay);
   });
 
 });
