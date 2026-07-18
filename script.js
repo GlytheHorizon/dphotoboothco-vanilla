@@ -17,10 +17,10 @@ const contactInfo = {
 };
 
 const photoboothTypes = [
-  { id: 1, title: 'Classic Photobooth', description: 'The timeless photobooth experience with professional lighting and instant prints.', image: 'images/package1.png' },
-  { id: 2, title: 'Mirror Photobooth', description: 'Interactive full-length mirror booth with animated touchscreen interface.', image: 'images/package3.png' },
-  { id: 3, title: 'Toon Me Booth', description: 'AI-powered cartoon style photo transformation for fun and unique keepsakes.', image: 'images/package5.png' },
-  { id: 4, title: '360 Booth', description: 'Slow-motion 360-degree video booth for stunning social media content.', image: 'images/package7.png' },
+  { id: 1, title: 'Classic Photobooth', description: 'The timeless photobooth experience with professional lighting and instant prints.', image: 'images/package1.png', icon: 'camera' },
+  { id: 2, title: 'Mirror Photobooth', description: 'Interactive full-length mirror booth with animated touchscreen interface.', image: 'images/package3.png', icon: 'monitor' },
+  { id: 3, title: 'Toon Me Booth', description: 'AI-powered cartoon style photo transformation for fun and unique keepsakes.', image: 'images/package5.png', icon: 'sparkles' },
+  { id: 4, title: '360 Booth', description: 'Slow-motion 360-degree video booth for stunning social media content.', image: 'images/package7.png', icon: 'refreshCw' },
 ];
 
 const services = [
@@ -39,17 +39,17 @@ const printStyles = [
 ];
 
 const whyChooseUs = [
-  { title: 'Established & Trusted Since 2017', description: 'Nearly a decade of experience serving hundreds of events across the Philippines.' },
-  { title: 'Professional & Experienced Team', description: 'Skilled attendants and support staff dedicated to making your event flawless.' },
-  { title: 'High-Resolution DSLR System', description: 'Professional-grade camera equipment for crisp, vibrant photos every time.' },
-  { title: 'Studio-Quality Lighting', description: 'Professional lighting setup ensures perfect photos regardless of venue conditions.' },
-  { title: 'Instant High-Quality Prints', description: 'Guests walk away with premium printed photos instantly — no waiting.' },
-  { title: 'Unlimited Photo Sessions', description: 'No cap on fun — unlimited photo sessions throughout your entire event.' },
-  { title: 'Customized Photo Layouts & Branding', description: 'Personalized templates with your names, date, logos, and event theme.' },
-  { title: 'Fun Props & Premium Backdrops', description: 'Wide selection of themed props and backdrops to match any celebration.' },
-  { title: 'Reliable Setup & On-Site Support', description: 'We arrive early and stay until the last guest — hassle-free and worry-free.' },
-  { title: 'Affordable Packages', description: 'Flexible and budget-friendly options without compromising on quality.' },
-  { title: 'Customized Solutions', description: 'Tailored packages for corporate and private events to match your specific needs.' },
+  { title: 'Established & Trusted Since 2017', description: 'Nearly a decade of experience serving hundreds of events across the Philippines.', icon: 'shield' },
+  { title: 'Professional & Experienced Team', description: 'Skilled attendants and support staff dedicated to making your event flawless.', icon: 'users' },
+  { title: 'High-Resolution DSLR System', description: 'Professional-grade camera equipment for crisp, vibrant photos every time.', icon: 'camera' },
+  { title: 'Studio-Quality Lighting', description: 'Professional lighting setup ensures perfect photos regardless of venue conditions.', icon: 'sun' },
+  { title: 'Instant High-Quality Prints', description: 'Guests walk away with premium printed photos instantly — no waiting.', icon: 'printer' },
+  { title: 'Unlimited Photo Sessions', description: 'No cap on fun — unlimited photo sessions throughout your entire event.', icon: 'infinity' },
+  { title: 'Customized Photo Layouts & Branding', description: 'Personalized templates with your names, date, logos, and event theme.', icon: 'layout' },
+  { title: 'Fun Props & Premium Backdrops', description: 'Wide selection of themed props and backdrops to match any celebration.', icon: 'gift' },
+  { title: 'Reliable Setup & On-Site Support', description: 'We arrive early and stay until the last guest — hassle-free and worry-free.', icon: 'settings' },
+  { title: 'Affordable Packages', description: 'Flexible and budget-friendly options without compromising on quality.', icon: 'wallet' },
+  { title: 'Customized Solutions', description: 'Tailored packages for corporate and private events to match your specific needs.', icon: 'palette' },
 ];
 
 const packages = [
@@ -66,12 +66,12 @@ const eventTypes = [
 ];
 
 const processSteps = [
-  { title: 'Book', description: 'Choose your package and secure your date.' },
-  { title: 'Customize', description: 'Personalize frames, backdrops, and props.' },
-  { title: 'Setup', description: 'We arrive early and set up everything.' },
-  { title: 'Smile', description: 'Your guests enjoy unlimited photo sessions.' },
-  { title: 'Print', description: 'Instant high-quality prints for everyone.' },
-  { title: 'Receive Digital Copies', description: 'All photos delivered online after event.' },
+  { title: 'Book', description: 'Choose your package and secure your date.', icon: 'send' },
+  { title: 'Customize', description: 'Personalize frames, backdrops, and props.', icon: 'layout' },
+  { title: 'Setup', description: 'We arrive early and set up everything.', icon: 'settings' },
+  { title: 'Smile', description: 'Your guests enjoy unlimited photo sessions.', icon: 'camera' },
+  { title: 'Print', description: 'Instant high-quality prints for everyone.', icon: 'printer' },
+  { title: 'Receive Digital Copies', description: 'All photos delivered online after event.', icon: 'mail' },
 ];
 
 const testimonials = [
@@ -115,8 +115,20 @@ const icons = {
   graduation: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
   gift: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>',
   users: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-  church: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M9 4v3"/><path d="M9 18h6"/><path d="M12 4v14"/><path d="M4 22V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v14"/><path d="M4 22h16"/></svg>',
-  building2: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>',
+   church: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M9 4v3"/><path d="M9 18h6"/><path d="M12 4v14"/><path d="M4 22V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v14"/><path d="M4 22h16"/></svg>',
+   building2: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>',
+   monitor: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+   sparkles: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>',
+   refreshCw: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>',
+   shield: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>',
+   sun: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>',
+   printer: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>',
+   infinity: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 1 0-8c-2 0-4 1.33-6 4Z"/></svg>',
+   layout: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>',
+   settings: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+   wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
+   palette: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.42-4.58-8-10-8z"/></svg>',
+   thumbsUp: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z"/></svg>',
 };
 
 const iconMap = {
@@ -127,20 +139,82 @@ const iconMap = {
 // ===== DOM READY =====
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- NAVBAR ---
+  // --- DOM REFS ---
   const navbar = document.querySelector('.navbar');
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuContent = document.getElementById('mobile-menu-content');
+  const backToTopBtn = document.getElementById('back-to-top');
+  const progressBar = document.getElementById('progress-bar');
   let mobileOpen = false;
+
+  // --- SMOOTH SCROLL (Lenis) ---
+  const lenis = new Lenis({
+    duration: 1.8,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 1,
+    touchMultiplier: 1.5,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // Sync Lenis scroll with navbar, progress bar, back-to-top
+  lenis.on('scroll', (e) => {
+    const scrollTop = e.scroll;
+    const scrolled = scrollTop > 50;
+    navbar.classList.toggle('scrolled', scrolled);
+    mobileToggle.style.color = scrolled ? '#fff' : '#121212';
+
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    progressBar.style.transform = `scaleX(${progress})`;
+
+    backToTopBtn.classList.toggle('show', scrollTop > 300);
+  });
+
+  // Override native anchor scroll with Lenis
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const href = anchor.getAttribute('href');
+      if (href === '#' || !href) return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        lenis.scrollTo(target, { offset: -80, duration: 1.8 });
+      }
+    });
+  });
+
+  // Back to top
+  backToTopBtn.addEventListener('click', () => {
+    lenis.scrollTo(0, { duration: 1.8 });
+  });
 
   function renderMobileLinks() {
     mobileMenuContent.innerHTML = navLinks.map(l =>
-      `<a href="${l.href}" style="font-size:0.875rem;font-weight:500;color:#374151;padding:0.5rem 0;transition:color 0.3s" onmouseenter="this.style.color='var(--primary)'" onmouseleave="this.style.color='#374151'">${l.name}</a>`
+      `<a href="${l.href}" style="font-size:0.875rem;font-weight:500;color:rgba(255,255,255,0.7);padding:0.75rem 0.5rem;border-radius:0.5rem;transition:all 0.2s;display:block" onmouseenter="this.style.background='rgba(175,255,0,0.1)';this.style.color='var(--primary)'" onmouseleave="this.style.background='transparent';this.style.color='rgba(255,255,255,0.7)'">${l.name}</a>`
     ).join('') +
-      `<a href="${contactInfo.messenger}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem 1.25rem;border-radius:9999px;font-size:0.875rem;font-weight:600;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary));box-shadow:0 8px 24px rgba(0,0,0,0.15)">${icons.messenger} Message Us</a>`;
+      `<a href="${contactInfo.messenger}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem 1.25rem;border-radius:9999px;font-size:0.875rem;font-weight:600;color:#121212;background:var(--primary);border:none;transition:opacity 0.2s" ontouchstart="this.style.opacity='0.8'" ontouchend="this.style.opacity='1'">${icons.messenger} Message Us</a>`;
     mobileMenuContent.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => { toggleMobile(false); });
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href && href.startsWith('#') && href !== '#') {
+          e.preventDefault();
+          toggleMobile(false);
+          const target = document.querySelector(href);
+          if (target) {
+            setTimeout(() => lenis.scrollTo(target, { offset: -80, duration: 1.8 }), 200);
+          }
+        } else {
+          toggleMobile(false);
+        }
+      });
     });
   }
   renderMobileLinks();
@@ -154,16 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileToggle.addEventListener('click', () => toggleMobile());
   mobileToggle.style.color = '#121212';
 
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY > 50;
-    navbar.classList.toggle('scrolled', scrolled);
-    mobileToggle.style.color = scrolled ? '#fff' : '#121212';
-    // Progress bar
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = docHeight > 0 ? scrollTop / docHeight : 0;
-    document.getElementById('progress-bar').style.transform = `scaleX(${progress})`;
-  });
+
 
   // --- PACKAGES SLIDER ---
   const packagesTrack = document.getElementById('packages-slider-track');
@@ -173,11 +238,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (packagesTrack) {
     let currentPackageSlide = 0;
-    const packageImages = ['package1.png','package2.png','package3.png','package4.png','package5.png','package6.png','package7.png','package8.png','package9.png','package10.png'];
+    const packageImages = ['package1.png', 'package2.png', 'package3.png', 'package4.png', 'package5.png', 'package6.png', 'package7.png', 'package8.png', 'package9.png', 'package10.png'];
+
+    let packageAutoplay;
+
+    function startAutoplay() {
+      stopAutoplay();
+      packageAutoplay = setInterval(() => {
+        goToPackageSlide(currentPackageSlide + 1);
+      }, 3000);
+    }
+
+    function stopAutoplay() {
+      if (packageAutoplay) clearInterval(packageAutoplay);
+    }
 
     function renderPackagesSlider() {
       packagesTrack.innerHTML = packageImages.map((img, i) =>
-        `<div class="packages-slide">
+        `<div class="packages-slide" onclick="openPackageLightbox('images/${img}')" style="cursor: zoom-in;">
           <div class="packages-slide-img">
             <img src="images/${img}" alt="Package ${i + 1}" loading="eager" />
           </div>
@@ -186,6 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updatePackageDots();
       goToPackageSlide(0);
+      startAutoplay();
     }
 
     function updatePackageDots() {
@@ -196,12 +275,20 @@ document.addEventListener('DOMContentLoaded', () => {
       packagesDots.querySelectorAll('.packages-slider-dot').forEach(dot => {
         dot.addEventListener('click', () => {
           goToPackageSlide(parseInt(dot.dataset.index));
+          startAutoplay();
         });
       });
     }
 
     function goToPackageSlide(index) {
-      currentPackageSlide = Math.min(index, packageImages.length - 1);
+      if (index < 0) {
+        currentPackageSlide = packageImages.length - 1;
+      } else if (index >= packageImages.length) {
+        currentPackageSlide = 0;
+      } else {
+        currentPackageSlide = index;
+      }
+
       const slide = packagesTrack.querySelector('.packages-slide');
       if (!slide) return;
       const offset = -(currentPackageSlide * slide.offsetWidth);
@@ -213,10 +300,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     packagesPrev?.addEventListener('click', () => {
       goToPackageSlide(currentPackageSlide - 1);
+      startAutoplay();
     });
 
     packagesNext?.addEventListener('click', () => {
       goToPackageSlide(currentPackageSlide + 1);
+      startAutoplay();
     });
 
     renderPackagesSlider();
@@ -255,11 +344,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const photoboothGrid = document.getElementById('photobooth-grid');
   if (photoboothGrid) {
     photoboothGrid.innerHTML = photoboothTypes.map((b, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;overflow:hidden;border:1px solid rgba(255,255,255,0.1);transition:all 0.3s" onmouseenter="this.style.transform='translateY(-5px)';this.style.borderColor='rgba(175,255,0,0.3)'" onmouseleave="this.style.transform='';this.style.borderColor='rgba(255,255,255,0.1)'">
-        <div style="padding:1.5rem">
-          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.125rem;color:#fff;margin-bottom:0.5rem">${b.title}</h3>
-          <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.625">${b.description}</p>
+      `<div class="gigi-card animate-on-scroll fade-up stagger-${i + 1}">
+        <div class="gigi-card-icon">
+          ${icons[b.icon] || icons.camera}
         </div>
+        <h3 class="gigi-card-title">${b.title}</h3>
+        <p class="gigi-card-desc">${b.description}</p>
+        <a href="https://m.me/dphotoboothco" target="_blank" rel="noopener noreferrer" class="gigi-card-link">
+          Inquire Now
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>`
     ).join('');
   }
@@ -267,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const printStylesGrid = document.getElementById('print-styles-grid');
   if (printStylesGrid) {
     printStylesGrid.innerHTML = printStyles.map((g, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;border:1px solid rgba(255,255,255,0.1)">
+      `<div class="animate-on-scroll fade-up stagger-${i + 1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;border:1px solid rgba(255,255,255,0.1)">
         <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:#AFFF00;margin-bottom:1rem">${g.category}</h3>
         <ul style="display:flex;flex-direction:column;gap:0.625rem">
           ${g.items.map(item => `<li style="display:flex;align-items:center;gap:0.625rem;font-size:0.875rem;color:rgba(255,255,255,0.6)"><span style="width:6px;height:6px;border-radius:50%;background:#AFFF00;flex-shrink:0"></span>${item}</li>`).join('')}
@@ -281,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
 
-  window.openPackageLightbox = function(src) {
+  window.openPackageLightbox = function (src) {
     lightboxImg.src = src;
     lightboxImg.alt = 'Service Package';
     lightbox.classList.add('open');
@@ -304,12 +398,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const wcuGrid = document.getElementById('wcu-grid');
   if (wcuGrid) {
     wcuGrid.innerHTML = whyChooseUs.map((item, i) =>
-      `<div class="animate-on-scroll fade-scale stagger-${i+1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;transition:all 0.3s;border:1px solid rgba(255,255,255,0.1)" onmouseenter="this.style.borderColor='rgba(175,255,0,0.3)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.borderColor='rgba(255,255,255,0.1)';this.style.transform=''">
-        <div style="width:3rem;height:3rem;border-radius:0.75rem;background:#AFFF00;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="2.5"/></svg>
+      `<div class="gigi-card animate-on-scroll fade-up stagger-${Math.min(i + 1, 7)}">
+        <div class="gigi-card-icon">
+          ${icons[item.icon] || icons.camera}
         </div>
-        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;color:#fff;margin-bottom:0.5rem">${item.title}</h3>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.625">${item.description}</p>
+        <h3 class="gigi-card-title">${item.title}</h3>
+        <p class="gigi-card-desc">${item.description}</p>
+        <a href="https://m.me/dphotoboothco" target="_blank" rel="noopener noreferrer" class="gigi-card-link">
+          Learn More
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>`
     ).join('');
   }
@@ -318,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const packagesGrid = document.getElementById('packages-grid');
   if (packagesGrid) {
     packagesGrid.innerHTML = packages.map((pkg, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#fff;border-radius:1.5rem;overflow:hidden;transition:all 0.5s;box-shadow:${pkg.popular ? '0 20px 60px rgba(0,0,0,0.12)' : '0 8px 32px rgba(0,0,0,0.08)'};${pkg.popular ? 'transform:scale(1.05);outline:2px solid var(--primary);outline-offset:2px;position:relative' : ''}">
+      `<div class="animate-on-scroll fade-up stagger-${i + 1}" style="background:#fff;border-radius:1.5rem;overflow:hidden;transition:all 0.5s;box-shadow:${pkg.popular ? '0 20px 60px rgba(0,0,0,0.12)' : '0 8px 32px rgba(0,0,0,0.08)'};${pkg.popular ? 'transform:scale(1.05);outline:2px solid var(--primary);outline-offset:2px;position:relative' : ''}">
         ${pkg.popular ? '<div style="background:linear-gradient(135deg,var(--primary),var(--primary));color:#fff;font-size:0.75rem;font-weight:700;text-align:center;padding:0.5rem;letter-spacing:0.05em;text-transform:uppercase">Most Popular</div>' : ''}
         <div style="height:10rem;overflow:hidden">
           <img src="${pkg.image}" alt="${pkg.name}" loading="eager" style="width:100%;height:100%;object-fit:cover" />
@@ -352,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const eventsGrid = document.getElementById('events-grid');
   if (eventsGrid) {
     eventsGrid.innerHTML = eventTypes.map((e, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.08);transition:all 0.5s" onmouseenter="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)'">
+      `<div class="animate-on-scroll fade-up stagger-${i + 1}" style="background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.08);transition:all 0.5s" onmouseenter="this.style.transform='translateY(-8px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)'">
         <div style="position:relative;height:12rem;overflow:hidden">
           <img src="${e.image}" alt="${e.title}" loading="eager" style="width:100%;height:100%;object-fit:cover;transition:transform 0.7s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''"/>
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent)"></div>
@@ -365,7 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div style="padding:1.25rem">
           <p style="font-size:0.875rem;color:var(--muted);line-height:1.625;margin-bottom:1rem">${e.description}</p>
-          <a href="${contactInfo.messenger}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:0.375rem;font-size:0.875rem;font-weight:600;color:var(--primary);transition:color 0.3s" onmouseenter="this.style.color='var(--primary-dark)'" onmouseleave="this.style.color='var(--primary)'">
+          <a href="${contactInfo.messenger}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:0.375rem;font-size:0.875rem;font-weight:600;color:#65a30d;transition:color 0.3s" onmouseenter="this.style.color='#4d7c0f'" onmouseleave="this.style.color='#65a30d'">
             ${icons.messenger} Inquire via Messenger
           </a>
         </div>
@@ -377,24 +475,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const processGrid = document.getElementById('process-grid');
   if (processGrid) {
     processGrid.innerHTML = processSteps.map((step, i) =>
-      `<div class="animate-on-scroll fade-up stagger-${i+1}" style="background:var(--bg-section);border-radius:1rem;padding:1.5rem;display:flex;align-items:flex-start;gap:1.25rem;transition:all 0.3s" onmouseenter="this.style.boxShadow='0 8px 32px rgba(0,0,0,0.08)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.boxShadow='';this.style.transform=''">
-        <div style="position:relative;flex-shrink:0">
-          <div style="width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(175,255,0,0.3);transition:transform 0.3s" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="2.5"/></svg>
+      `<div class="animate-on-scroll fade-up stagger-${i + 1}" style="background:#1a1a1a;border-radius:1rem;padding:1.5rem;display:flex;align-items:flex-start;gap:1.25rem;transition:all 0.3s;border:1px solid rgba(255,255,255,0.1)" onmouseenter="this.style.borderColor='rgba(175,255,0,0.3)';this.style.transform='translateY(-5px)'" onmouseleave="this.style.borderColor='rgba(255,255,255,0.1)';this.style.transform=''">
+        <div style="position:relative;flex-shrink:0;color:#fff">
+          <div style="width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(175,255,0,0.3);transition:transform 0.3s;color:#121212" onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+            ${icons[step.icon] || icons.camera}
           </div>
-          <div style="position:absolute;top:-0.5rem;right:-0.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#fff;border:2px solid var(--primary);display:flex;align-items:center;justify-content:center">
-            <span style="font-size:0.75rem;font-weight:700;color:var(--primary)">${i+1}</span>
+          <div style="position:absolute;top:-0.5rem;right:-0.5rem;width:1.5rem;height:1.5rem;border-radius:50%;background:#fff;border:2px solid #65a30d;display:flex;align-items:center;justify-content:center">
+            <span style="font-size:0.75rem;font-weight:700;color:#65a30d">${i + 1}</span>
           </div>
         </div>
         <div style="flex:1;min-width:0">
-          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.125rem;color:var(--text);margin-bottom:0.25rem">${step.title}</h3>
-          <p style="font-size:0.875rem;color:var(--muted);line-height:1.625">${step.description}</p>
+          <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.125rem;color:#fff;margin-bottom:0.25rem">${step.title}</h3>
+          <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);line-height:1.625">${step.description}</p>
         </div>
       </div>`
     ).join('');
   }
-
-  // --- TESTIMONIALS ---
   const testimonialsWrapper = document.getElementById('testimonials-wrapper');
   const testimonialsPagination = document.getElementById('testimonials-pagination');
   if (testimonialsWrapper) {
@@ -413,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const totalSlides = Math.ceil(testimonials.length / spv);
       testimonialsWrapper.innerHTML = testimonials.map(t => {
         const stars = Array.from({ length: t.rating }, () => icons.star).join('');
-        return `<div class="testimonial-card" style="flex:0 0 ${100/spv}%;padding:0 0.75rem">
+        return `<div class="testimonial-card" style="flex:0 0 ${100 / spv}%;padding:0 0.75rem">
           <div style="background:#fff;border-radius:1.5rem;padding:2rem;box-shadow:0 8px 32px rgba(0,0,0,0.08);height:100%">
             <div style="display:flex;gap:0.25rem;margin-bottom:1rem;color:var(--primary)">${stars}</div>
             <p style="color:#4B5563;font-size:0.875rem;line-height:1.625;margin-bottom:1.5rem">"${t.text}"</p>
@@ -472,10 +568,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- FAQ ---
   const faqList = document.getElementById('faq-list');
+
   if (faqList) {
-    faqList.innerHTML = faqs.map(faq =>
-      `<div class="faq-item animate-on-scroll fade-up stagger-${Math.min(faq.id, 6)}" style="background:var(--bg-section);border-radius:1rem;overflow:hidden;transition:all 0.3s">
-        <button class="faq-toggle" data-id="${faq.id}" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem;text-align:left;background:none;border:none;cursor:pointer">
+    faqList.innerHTML = faqs.map((faq, i) =>
+      `<div class="faq-item animate-on-scroll fade-up stagger-${Math.min(i + 1, 6)}" style="background:var(--bg-section);border-radius:1rem;overflow:hidden;transition:all 0.3s">
+        <button class="faq-toggle" data-id="${i}" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem;text-align:left;background:none;border:none;cursor:pointer">
           <span style="font-size:0.875rem;font-weight:600;color:var(--text);padding-right:1rem">${faq.question}</span>
           <div class="faq-chevron" style="flex-shrink:0;width:2rem;height:2rem;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary));display:flex;align-items:center;justify-content:center;transition:transform 0.3s">
             ${icons.chevronDown}
@@ -487,15 +584,30 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>`
     ).join('');
 
-    faqList.querySelectorAll('.faq-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        faqList.querySelectorAll('.faq-item.open').forEach(el => {
-          if (el !== item) el.classList.remove('open');
-        });
-        item.classList.toggle('open', !isOpen);
+    faqList.addEventListener('click', (e) => {
+      const btn = e.target.closest('.faq-toggle');
+      if (!btn) return;
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      faqList.querySelectorAll('.faq-item.open').forEach(el => {
+        if (el !== item) {
+          const ans = el.querySelector('.faq-answer');
+          if (ans) { ans.style.maxHeight = '0'; ans.style.opacity = '0'; }
+          el.classList.remove('open');
+        }
       });
+
+      const answer = item.querySelector('.faq-answer');
+      if (isOpen) {
+        answer.style.maxHeight = '0';
+        answer.style.opacity = '0';
+        item.classList.remove('open');
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 20 + 'px';
+        answer.style.opacity = '1';
+        item.classList.add('open');
+      }
     });
   }
 
@@ -547,9 +659,10 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    }, { threshold: 0.12, rootMargin: '0px 0px -20px 0px' });
 
     animEls.forEach(el => observer.observe(el));
   }
