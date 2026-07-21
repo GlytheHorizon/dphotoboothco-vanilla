@@ -678,12 +678,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- HERO BACKGROUND SLIDER ---
   const heroBgEl = document.querySelector('.hero');
   if (heroBgEl) {
+    /*
     const bgImages = [
       'images/hero/41940972_246774882699471_8545659560851931136_n.jpg',
       'images/hero/74601179_442251286485162_6207736882558664704_n.jpg',
       'images/hero/80556682_459743654735925_3069774093235519488_n.jpg',
       'images/hero/82529310_477980832912207_6869787378064556032_n.jpg',
-    ];
+    ]; 
+    */
 
     const sliderDiv = document.createElement('div');
     sliderDiv.className = 'hero-bg-slider';
