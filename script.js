@@ -675,4 +675,72 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { el.classList.add('visible'); }, delay);
   });
 
+  // --- HERO BACKGROUND SLIDER ---
+  const heroBgEl = document.querySelector('.hero');
+  if (heroBgEl) {
+    const bgImages = [
+      'images/hero/41940972_246774882699471_8545659560851931136_n.jpg',
+      'images/hero/74601179_442251286485162_6207736882558664704_n.jpg',
+      'images/hero/80556682_459743654735925_3069774093235519488_n.jpg',
+      'images/hero/82529310_477980832912207_6869787378064556032_n.jpg',
+    ];
+
+    const sliderDiv = document.createElement('div');
+    sliderDiv.className = 'hero-bg-slider';
+
+    bgImages.forEach((src, i) => {
+      const slide = document.createElement('div');
+      slide.className = `hero-bg-slide ${i === 0 ? 'active' : ''}`;
+      slide.style.backgroundImage = `url(${src})`;
+      sliderDiv.appendChild(slide);
+    });
+
+    const overlay = document.createElement('div');
+    overlay.className = 'hero-bg-overlay';
+    heroBgEl.insertBefore(sliderDiv, heroBgEl.firstChild);
+    heroBgEl.insertBefore(overlay, heroBgEl.firstChild);
+
+    const dotsDiv = document.createElement('div');
+    dotsDiv.className = 'hero-bg-dots';
+    bgImages.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = `hero-bg-dot ${i === 0 ? 'active' : ''}`;
+      dot.addEventListener('click', () => { goToBgSlide(i); restartBgAutoplay(); });
+      dotsDiv.appendChild(dot);
+    });
+    heroBgEl.appendChild(dotsDiv);
+
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'hero-bg-btn hero-bg-btn-prev';
+    prevBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>';
+    prevBtn.addEventListener('click', () => { goToBgSlide(bgIndex - 1); restartBgAutoplay(); });
+    heroBgEl.appendChild(prevBtn);
+
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'hero-bg-btn hero-bg-btn-next';
+    nextBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+    nextBtn.addEventListener('click', () => { goToBgSlide(bgIndex + 1); restartBgAutoplay(); });
+    heroBgEl.appendChild(nextBtn);
+
+    let bgIndex = 0;
+    let bgAutoplay;
+
+    function goToBgSlide(index) {
+      const slides = sliderDiv.querySelectorAll('.hero-bg-slide');
+      const dots = dotsDiv.querySelectorAll('.hero-bg-dot');
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      bgIndex = (index + slides.length) % slides.length;
+      slides[bgIndex].classList.add('active');
+      dots[bgIndex].classList.add('active');
+    }
+
+    function restartBgAutoplay() {
+      if (bgAutoplay) clearInterval(bgAutoplay);
+      bgAutoplay = setInterval(() => goToBgSlide(bgIndex + 1), 5000);
+    }
+
+    restartBgAutoplay();
+  }
+
 });
